@@ -1,0 +1,157 @@
+
+.card3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-self: stretch;
+}
+html, body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-image: url(../imagens/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  overflow: hidden
+}
+ul {
+  list-style:none;
+  text-align:center;
+  position: absolute;
+/*   transform: translate(-50%,-50%); */
+  left: 50%;
+  top: 60%;
+  margin-left: -140px;
+  margin-top: -250px;
+}
+ul li {
+  display: block;
+  position: absolute;
+  width: 260px;
+  height: 415px;
+  top: 0;
+  left: 0;
+  transform:  rotate(15deg) skew(-60deg);
+  transform-origin:bottom center;
+  box-shadow:10px 10px 30px rgba(0,0,0,0.3) ;
+  transition: 2s;
+  /* overflow: hidden; */
+}
+ul li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  /* background: -moz-linear-gradient(45deg, rgba(40,255,247,1) 0%, rgba(129,40,255,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(40,255,247,1) 0%,rgba(129,40,255,1) 100%);
+  background: linear-gradient(45deg, rgba(40,255,247,1) 0%,rgba(129,40,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28fff7', endColorstr='#8128ff',GradientType=1 ); */ 
+}
+#card1 {
+  background-image: url(../imagens/redcard.png);
+  background-position: center;
+  background-size: cover;
+
+}
+#card2 {
+  background-image: url(../imagens/goldcard1.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+#card3 {
+  background-image: url(../imagens/bluecrad.png);
+  background-position: center;
+  background-size: cover;
+}
+ul li h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  /* tempo da transicao carta */
+  transition:.4s;
+} 
+ul li > span {
+  font-size:1.7em;
+  color: rgba(194, 189, 189, 0.2);
+  text-align: center;
+  padding: 15px;
+  text-transform: capitalize;
+}
+ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  top: 40px;
+  border: 5px transparent black;
+  transition: all .7s cubic-bezier(0.68, 0, 0.265, 1.55);
+  color: red;
+  text-decoration: none;
+  transform:scale(0);
+}
+ul li a p {
+color: black;
+}
+ul li a:after {
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  transform-origin:center top;
+  border-radius:100% 0 0 0;
+  transition: all 0.10s linear;
+}
+ul li:hover a:hover:after {
+  height:1000%;
+  width: 100%;
+  position: absolute;
+}
+ul li a:hover {
+  border-color: transparent;
+  transform:scale(1.2) !important;
+}
+ul li:nth-child(1) {
+    transform:  rotate(20deg) skew(-20deg) translate(10px,10px); 
+}
+ul li:nth-child(2) {
+    transform:  rotate(20deg) skew(-20deg) translate(0px,0px); 
+}
+ul li:nth-child(3) {
+    transform:  rotate(20deg) skew(-20deg) translate(-10px,-10px); 
+}
+ul:hover li:nth-child(1) {
+    transform:  rotate(40deg) skew(0) translate(80px,0) ; 
+}
+ul:hover li:nth-child(2) {
+    transform:  rotate(0) skew(0); 
+}
+ul:hover li:nth-child(3) {
+    transform:  rotate(-40deg) skew(0) translate(-100px,0) ; 
+}
+ul:hover li:hover {
+  z-index: 9;
+  background-color: #0e1826;
+  box-shadow:100px 100px 40px rgba(0,0,0,0.5) ;
+  
+} 
+ul:hover li:hover a {
+  top: 280px;
+  right: 50px;
+  transform:scale(1);
+}
+ul:hover li:hover:after {
+  height:100%;
+  transform:skew(30deg);
+}
+ul:hover li:hover * {
+  /* CORES DO TEXT */
+  color: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: none;
+}
