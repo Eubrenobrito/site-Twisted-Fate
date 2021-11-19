@@ -1,6 +1,7 @@
 # Twisted Fate
 
 projeto para treinar codificação.
+Acesse o site aqui: https://eubrenobrito.github.io/site-Twisted-Fate/
 
 ## Sobre o site
 
