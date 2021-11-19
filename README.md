@@ -1,10 +1,15 @@
-# Twisted Fate
+# Twisted Fate 
+Projeto para treinar codificação.
 
-projeto para treinar codificação.
-Acesse o site aqui: https://eubrenobrito.github.io/site-Twisted-Fate/
+
+<Strong>
+Acesse o demo 
+</strong>
+<a href="https://eubrenobrito.github.io/site-Twisted-Fate/" target="_blank"> AQUI </a>
+
 
 ## Sobre o site
 
-Site especial para o personagem do league of legends, Twisted fate. Sob a qual mostra tudo sobre ele, como skins, historias e habilidades.
+Page principal para o personagem do league of legends, Twisted fate. Sob a qual mostra tudo sobre ele, como skins, historias e habilidades.
 
 Obs:usando somente HTML e CSS.
